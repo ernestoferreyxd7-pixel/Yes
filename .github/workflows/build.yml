@@ -18,7 +18,8 @@ jobs:
         with:
           gradle-version: 8.10.2
 
-      - run: gradle build
+            - run: gradle build --stacktrace
+        working-directory: scorpysafio
 
       - uses: actions/upload-artifact@v4
         with:
